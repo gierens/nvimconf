@@ -35,6 +35,10 @@ colorscheme gruvbox
 " toggle background
 call togglebg#map("<F5>")
 
+" toggle highlight for searches
+let hlstate=0
+nnoremap <F4> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
+
 
 " 80 char line
 set colorcolumn=80
