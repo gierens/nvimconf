@@ -4,14 +4,20 @@ call plug#begin()
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'severin-lemaignan/vim-minimap'
+
+" CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'clangd/coc-clangd'
 Plug 'neoclide/coc-snippets'
 Plug 'neoclide/coc-python'
 " Plug 'neoclide/coc-highlight'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " transparent background
@@ -20,11 +26,14 @@ call plug#end()
 
 " colors
 colorscheme gruvbox
-set termguicolors
+
+" toggle background
+call togglebg#map("<C-b>")
+
 
 " 80 char line
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+" highlight ColorColumn ctermbg=0 guibg=darkgrey
 
 " tabs
 set tabstop=4 shiftwidth=4 expandtab
@@ -32,7 +41,7 @@ set tabstop=4 shiftwidth=4 expandtab
 " line numbers
 set number
 set relativenumber
-highlight LineNr ctermfg=white ctermbg=darkgrey
+" highlight LineNr ctermfg=white ctermbg=0 guibg=darkgrey
 
 
 " TextEdit might fail if hidden is not set.
