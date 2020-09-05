@@ -15,6 +15,8 @@ Plug 'clangd/coc-clangd'
 Plug 'neoclide/coc-snippets'
 Plug 'neoclide/coc-python'
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+Plug 'josa42/coc-sh'
+Plug 'neoclide/coc-yaml'
 " Plug 'neoclide/coc-highlight'
 
 Plug 'vim-airline/vim-airline'
