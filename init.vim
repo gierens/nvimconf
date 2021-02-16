@@ -4,10 +4,15 @@ call plug#begin()
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'severin-lemaignan/vim-minimap'
+" Plug 'takac/vim-hardtime'
+Plug 'lervag/vimtex'
 
 " fzf
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 " Plug 'junegunn/fzf.vim'
+
+" fugitive
+Plug 'tpope/vim-fugitive'
 
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -17,10 +22,17 @@ Plug 'neoclide/coc-python'
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
 Plug 'josa42/coc-sh'
 Plug 'neoclide/coc-yaml'
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-git'
+Plug 'Yggdroot/indentLine'
+" Plug 'fannheyward/coc-texlab'
+" Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
+" TODO coc-lists
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -238,6 +250,80 @@ nnoremap <silent> [fzf-p]q     :<C-u>CocCommand fzf-preview.QuickFix<CR>
 nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
 
 
+" coc-explorer
+":nmap <C-n> :CocCommand explorer<CR>
+
+" Vim Hardtime
+let g:hardtime_default_on = 1
+
 "TODO
 " coc-highlight Config
 "autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" vimtex
+let g:tex_flavor = 'latex'
+
+" indentline
+"let g:indentLine_leadingSpaceChar='·'
+"let g:indentLine_leadingSpaceEnabled=1
+let g:indentLine_fileTypeExclude = ['help', 'nerdtree']
+let g:indentLine_bufNameExclude = ['_.*', 'NERD_tree.*']
+let g:indentLine_char = '│'
+"let g:indentLine_showFirstIndentLevel = 1
+"let g:indentLine_first_char = '│'
+
+
+" coc-git
+
+" lightline
+let g:lightline = {
+  \ 'active': {
+  \   'left': [
+  \     [ 'mode', 'paste' ],
+  \     [ 'ctrlpmark', 'git', 'diagnostic', 'cocstatus', 'filename', 'method' ]
+  \   ],
+  \   'right':[
+  \     [ 'filetype', 'fileencoding', 'lineinfo', 'percent' ],
+  \     [ 'blame' ]
+  \   ],
+  \ },
+  \ 'component_function': {
+  \   'blame': 'LightlineGitBlame',
+  \ }
+\ }
+
+" set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
+
+function! LightlineGitBlame() abort
+  let blame = get(b:, 'coc_git_blame', '')
+  " return blame
+  return winwidth(0) > 120 ? blame : ''
+endfunction
+
+" navigate chunks of current buffer
+nmap [f <Plug>(coc-git-prevchunk)
+nmap ]f <Plug>(coc-git-nextchunk)
+" navigate conflicts of current buffer
+nmap [c <Plug>(coc-git-prevconflict)
+nmap ]c <Plug>(coc-git-nextconflict)
+" show chunk diff at current position
+nmap fi <Plug>(coc-git-chunkinfo)
+" show commit contains current position
+nmap fs <Plug>(coc-git-commit)
+" create text object for git chunks
+omap if <Plug>(coc-git-chunk-inner)
+xmap if <Plug>(coc-git-chunk-inner)
+omap af <Plug>(coc-git-chunk-outer)
+xmap af <Plug>(coc-git-chunk-outer)
+" stage chuck at current position
+nmap fa :CocCommand git.chunkStage<CR>
+" undo chuck at current position
+nmap fu :CocCommand git.chunkUndo<CR>
+" push
+nmap fp :CocCommand git.push<CR>
+
+" fugitive
+
+" commit
+nmap fc :Git commit<CR>
+" TODO maybe some restore staged
