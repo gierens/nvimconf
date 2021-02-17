@@ -34,6 +34,9 @@ Plug 'Yggdroot/indentLine'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 
+" Plug 'udalov/kotlin-vim'
+Plug 'sheerun/vim-polyglot'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
