@@ -3,6 +3,7 @@ call plug#begin()
 " Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'severin-lemaignan/vim-minimap'
 " Plug 'takac/vim-hardtime'
 Plug 'lervag/vimtex'
@@ -24,6 +25,7 @@ Plug 'josa42/coc-sh'
 Plug 'neoclide/coc-yaml'
 Plug 'neoclide/coc-tsserver'
 Plug 'neoclide/coc-git'
+Plug 'iamcco/coc-spell-checker'
 Plug 'Yggdroot/indentLine'
 " Plug 'fannheyward/coc-texlab'
 " Plug 'weirongxu/coc-explorer'
@@ -274,7 +276,8 @@ let g:indentLine_bufNameExclude = ['_.*', 'NERD_tree.*']
 let g:indentLine_char = '│'
 "let g:indentLine_showFirstIndentLevel = 1
 "let g:indentLine_first_char = '│'
-
+" prevent conceal in tex files due to math fuck up
+let g:indentLine_fileTypeExclude = ['tex']
 
 " coc-git
 
@@ -330,3 +333,52 @@ nmap fp :CocCommand git.push<CR>
 " commit
 nmap fc :Git commit<CR>
 " TODO maybe some restore staged
+
+
+" Further CoC Settings
+let g:coc_filetype_map = { 'yaml.ansible': 'yaml', }
+
+
+" reload config
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
+
+" coc-snippets
+
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+" 
+" " Use <C-j> for select text for visual placeholder of snippet.
+" vmap <C-j> <Plug>(coc-snippets-select)
+" 
+" " Use <C-j> for jump to next placeholder, it's default of coc.nvim
+" let g:coc_snippet_next = '<c-j>'
+" 
+" " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+" let g:coc_snippet_prev = '<c-k>'
+" 
+" " Use <C-j> for both expand and jump (make expand higher priority.)
+" imap <C-j> <Plug>(coc-snippets-expand-jump)
+" 
+" " Use <leader>x for convert visual selected code to snippet
+" xmap <leader>x  <Plug>(coc-convert-snippet)
+
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? coc#_select_confirm() :
+"       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
+" 
+" function! s:check_back_space() abort
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~# '\s'
+" endfunction
+" 
+" let g:coc_snippet_next = '<tab>'
+
+
+" coc-spell-checker
+map <C-a> :CocCommand cSpell.toggleEnableSpellChecker<CR>
+" TODO this is duplicated
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
