@@ -99,6 +99,14 @@ else
   set signcolumn=yes
 endif
 
+" Highlight trailing whitespaces and other unwanted characters  
+highlight ExtraWhitespace ctermbg=yellow guibg=yellow                 
+"match ExtraWhitespace /\s\+$/                                  
+call matchadd('ExtraWhitespace', '\s\+$')                       
+"call matchadd('ExtraWhitespace', ' ')                           
+" Match all non-ASCII characters (including äöüß ...)           
+"call matchadd('ExtraWhitespace', '[^\u0000-\u007F]')
+
 " NerdTree Config
 map <C-n> :NERDTreeToggle<CR>
 
