@@ -403,3 +403,7 @@ map <C-c> :Cheat
 
 " enable asm syntax for .asm files
 autocmd BufNewFile,BufRead *.asm set syntax=asm
+
+" delete previous word in insert mode
+inoremap <C-w> <C-\><C-o>dB
+inoremap <C-BS> <C-\><C-o>db " TODO does not work apparently
