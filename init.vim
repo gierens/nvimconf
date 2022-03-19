@@ -39,6 +39,9 @@ Plug 'itchyny/lightline.vim'
 " Plug 'udalov/kotlin-vim'
 Plug 'sheerun/vim-polyglot'
 
+" rust
+Plug 'rust-lang/rust.vim'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
@@ -382,3 +385,7 @@ map <C-a> :CocCommand cSpell.toggleEnableSpellChecker<CR>
 " TODO this is duplicated
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
+
+" rust.vim
+syntax enable
+filetype plugin indent on
