@@ -320,6 +320,8 @@ function! LightlineGitBlame() abort
   return winwidth(0) > 120 ? blame : ''
 endfunction
 
+" TODO f as leader here ist a stupid choice because we cannot search in line
+" for a, c, u, p
 " navigate chunks of current buffer
 nmap [f <Plug>(coc-git-prevchunk)
 nmap ]f <Plug>(coc-git-nextchunk)
