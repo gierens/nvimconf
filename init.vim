@@ -45,6 +45,10 @@ Plug 'rust-lang/rust.vim'
 " also install hdl_checker
 Plug 'suoto/hdlcc'
 
+" cheat.sh
+Plug 'RishabhRD/popfix'
+Plug 'rishabhrd/nvim-cheat.sh'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
@@ -392,3 +396,7 @@ nmap <leader>a <Plug>(coc-codeaction-selected)
 " rust.vim
 syntax enable
 filetype plugin indent on
+
+" cheat.sh
+" vim.g.cheat_default_window_layout = 'split'
+map <C-c> :Cheat 
