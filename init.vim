@@ -42,6 +42,9 @@ Plug 'sheerun/vim-polyglot'
 " rust
 Plug 'rust-lang/rust.vim'
 
+" also install hdl_checker
+Plug 'suoto/hdlcc'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'

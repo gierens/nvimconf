@@ -42,4 +42,17 @@
   "cSpell.maxNumberOfProblems": 10000,
   "cSpell.userWords": [
   ],
+  "languageserver": {
+      "hdlChecker": {
+          "command": "hdl_checker",
+          "args": [
+              "--lsp"
+          ],
+          "filetypes": [
+              "vhdl",
+              "verilog",
+              "systemverilog"
+          ]
+      }
+  }
 }
