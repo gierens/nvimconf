@@ -49,6 +49,10 @@ Plug 'suoto/hdlcc'
 Plug 'RishabhRD/popfix'
 Plug 'rishabhrd/nvim-cheat.sh'
 
+" telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
@@ -407,3 +411,16 @@ autocmd BufNewFile,BufRead *.asm set syntax=asm
 " delete previous word in insert mode
 inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db " TODO does not work apparently
+
+" telescope
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+" 
+" " Using Lua functions
+" nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+" nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+" nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+" nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
