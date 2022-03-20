@@ -418,6 +418,9 @@ map <C-c> :Cheat
 " enable asm syntax for .asm files
 autocmd BufNewFile,BufRead *.asm set syntax=asm
 
+" enable tex syntax for .cls files
+autocmd BufNewFile,BufRead *.cls set syntax=tex
+
 " delete previous word in insert mode
 inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db " TODO does not work apparently
