@@ -5,7 +5,7 @@ Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'severin-lemaignan/vim-minimap'
-" Plug 'takac/vim-hardtime'
+Plug 'takac/vim-hardtime'
 Plug 'lervag/vimtex'
 
 " fzf
