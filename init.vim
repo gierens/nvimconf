@@ -53,6 +53,10 @@ Plug 'rishabhrd/nvim-cheat.sh'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+" harpoon
+" also requires nvim-lua/plenary.nvim
+Plug 'ThePrimeagen/harpoon'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
@@ -438,3 +442,17 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 " nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 " nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" harpoon
+nnoremap <silent><leader>a :lua require("harpoon.mark").add_file()<cr>
+nnoremap <silent><leader>e :lua require("harpoon.ui").toggle_quick_menu()<cr>
+nnoremap <silent><leader>1 :lua require("harpoon.ui").nav_file(1)<cr>
+nnoremap <silent><leader>2 :lua require("harpoon.ui").nav_file(2)<cr>
+nnoremap <silent><leader>3 :lua require("harpoon.ui").nav_file(3)<cr>
+nnoremap <silent><leader>4 :lua require("harpoon.ui").nav_file(4)<cr>
+nnoremap <silent><leader>5 :lua require("harpoon.ui").nav_file(5)<cr>
+nnoremap <silent><leader>6 :lua require("harpoon.ui").nav_file(6)<cr>
+nnoremap <silent><leader>7 :lua require("harpoon.ui").nav_file(7)<cr>
+nnoremap <silent><leader>8 :lua require("harpoon.ui").nav_file(8)<cr>
+nnoremap <silent><leader>9 :lua require("harpoon.ui").nav_file(9)<cr>
+nnoremap <silent><leader>0 :lua require("harpoon.ui").nav_file(0)<cr>
