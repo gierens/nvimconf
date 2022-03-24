@@ -405,7 +405,7 @@ imap <C-l> <Plug>(coc-snippets-expand)
 
 
 " coc-spell-checker
-map <C-a> :CocCommand cSpell.toggleEnableSpellChecker<CR>
+map <C-m> :CocCommand cSpell.toggleEnableSpellChecker<CR>
 " TODO this is duplicated
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
