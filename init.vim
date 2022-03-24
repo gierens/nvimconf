@@ -333,8 +333,6 @@ function! LightlineGitBlame() abort
   return winwidth(0) > 120 ? blame : ''
 endfunction
 
-" TODO f as leader here ist a stupid choice because we cannot search in line
-" for a, c, u, p
 " navigate chunks of current buffer
 nmap [f <Plug>(coc-git-prevchunk)
 nmap ]f <Plug>(coc-git-nextchunk)
@@ -342,25 +340,25 @@ nmap ]f <Plug>(coc-git-nextchunk)
 nmap [c <Plug>(coc-git-prevconflict)
 nmap ]c <Plug>(coc-git-nextconflict)
 " show chunk diff at current position
-nmap fi <Plug>(coc-git-chunkinfo)
+nmap <leader>gi <Plug>(coc-git-chunkinfo)
 " show commit contains current position
-nmap fs <Plug>(coc-git-commit)
+nmap <leader>gs <Plug>(coc-git-commit)
 " create text object for git chunks
-omap if <Plug>(coc-git-chunk-inner)
-xmap if <Plug>(coc-git-chunk-inner)
-omap af <Plug>(coc-git-chunk-outer)
-xmap af <Plug>(coc-git-chunk-outer)
+omap <leader>if <Plug>(coc-git-chunk-inner)
+xmap <leader>if <Plug>(coc-git-chunk-inner)
+omap <leader>af <Plug>(coc-git-chunk-outer)
+xmap <leader>af <Plug>(coc-git-chunk-outer)
 " stage chuck at current position
-nmap fa :CocCommand git.chunkStage<CR>
+nmap <leader>ga :CocCommand git.chunkStage<CR>
 " undo chuck at current position
-nmap fu :CocCommand git.chunkUndo<CR>
+nmap <leader>gu :CocCommand git.chunkUndo<CR>
 " push
-nmap fp :CocCommand git.push<CR>
+nmap <leader>gp :CocCommand git.push<CR>
 
 " fugitive
 
 " commit
-nmap fc :Git commit<CR>
+nmap <leader>gc :Git commit<CR>
 " TODO maybe some restore staged
 
 
