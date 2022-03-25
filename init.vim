@@ -57,6 +57,9 @@ Plug 'nvim-telescope/telescope.nvim'
 " also requires nvim-lua/plenary.nvim
 Plug 'ThePrimeagen/harpoon'
 
+" GitHub Copilot
+Plug 'github/copilot.vim'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
