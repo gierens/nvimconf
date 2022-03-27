@@ -5,7 +5,7 @@ Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'severin-lemaignan/vim-minimap'
-Plug 'takac/vim-hardtime'
+" Plug 'takac/vim-hardtime'
 Plug 'lervag/vimtex'
 
 " fzf
@@ -59,6 +59,9 @@ Plug 'ThePrimeagen/harpoon'
 
 " vim-be-good
 Plug 'ThePrimeagen/vim-be-good'
+
+" GitHub Copilot
+Plug 'github/copilot.vim'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -289,7 +292,7 @@ nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
 ":nmap <C-n> :CocCommand explorer<CR>
 
 " Vim Hardtime
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
 
 "TODO
 " coc-highlight Config
