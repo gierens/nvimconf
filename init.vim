@@ -89,8 +89,8 @@ set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=darkgrey
 
 " tabs
-"set tabstop=4 shiftwidth=4 expandtab
-set tabstop=8 shiftwidth=8 noexpandtab
+set tabstop=4 shiftwidth=4 expandtab
+"set tabstop=8 shiftwidth=8 noexpandtab
 
 " line numbers
 set number
