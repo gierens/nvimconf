@@ -57,6 +57,9 @@ Plug 'nvim-telescope/telescope.nvim'
 " also requires nvim-lua/plenary.nvim
 Plug 'ThePrimeagen/harpoon'
 
+" vim-be-good
+Plug 'ThePrimeagen/vim-be-good'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
