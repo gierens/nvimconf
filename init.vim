@@ -413,8 +413,8 @@ imap <C-l> <Plug>(coc-snippets-expand)
 " coc-spell-checker
 map <C-m> :CocCommand cSpell.toggleEnableSpellChecker<CR>
 " TODO this is duplicated
-vmap <leader>a <Plug>(coc-codeaction-selected)
-nmap <leader>a <Plug>(coc-codeaction-selected)
+vmap <leader>m <Plug>(coc-codeaction-selected)
+nmap <leader>m <Plug>(coc-codeaction-selected)
 
 " rust.vim
 syntax enable
