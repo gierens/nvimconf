@@ -54,5 +54,8 @@
               "systemverilog"
           ]
       }
-  }
+  },
+  "snippets.ultinips.directories": [
+      "${HOME}/.config/nvim/ultispnips"
+  ]
 }
