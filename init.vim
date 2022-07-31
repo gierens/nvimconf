@@ -463,3 +463,6 @@ nnoremap <silent><leader>0 :lua require("harpoon.ui").nav_file(0)<cr>
 
 " Yank to clipboard
 set clipboard+=unnamedplus
+
+" execute line as command in bash
+noremap <silent><leader>b :.!bash<cr>
