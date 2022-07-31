@@ -460,3 +460,6 @@ nnoremap <silent><leader>7 :lua require("harpoon.ui").nav_file(7)<cr>
 nnoremap <silent><leader>8 :lua require("harpoon.ui").nav_file(8)<cr>
 nnoremap <silent><leader>9 :lua require("harpoon.ui").nav_file(9)<cr>
 nnoremap <silent><leader>0 :lua require("harpoon.ui").nav_file(0)<cr>
+
+" Yank to clipboard
+set clipboard+=unnamedplus
