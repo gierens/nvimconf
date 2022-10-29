@@ -366,6 +366,8 @@ omap <leader>af <Plug>(coc-git-chunk-outer)
 xmap <leader>af <Plug>(coc-git-chunk-outer)
 " stage chuck at current position
 nmap <leader>ga :CocCommand git.chunkStage<CR>
+" unstage chuck at current position
+nmap <leader>gr :CocCommand git.chunkUnstage<CR>
 " undo chuck at current position
 nmap <leader>gu :CocCommand git.chunkUndo<CR>
 " push
