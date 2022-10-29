@@ -67,6 +67,9 @@ Plug 'ThePrimeagen/vim-be-good'
 " GitHub Copilot
 Plug 'github/copilot.vim'
 
+" Visual Multi
+Plug 'mg979/vim-visual-multi'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
@@ -139,7 +142,7 @@ call matchadd('ExtraWhitespace', '\s\+$')
 "call matchadd('ExtraWhitespace', '[^\u0000-\u007F]')
 
 " NerdTree Config
-map <C-n> :NERDTreeToggle<CR>
+map <C-l> :NERDTreeToggle<CR>
 
 
 " coc.nvim Config
@@ -557,3 +560,8 @@ require'treesitter-context'.setup{
     separator = nil,
 }
 EOF
+
+" Visual Multi
+" let g:VM_maps = {}
+" let g:VM_maps['Find Under']         = '<C-l>'           " replace C-n
+" let g:VM_maps['Find Subword Under'] = '<C-l>'           " replace visual C-n
