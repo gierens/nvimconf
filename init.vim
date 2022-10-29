@@ -101,6 +101,8 @@ set number
 set relativenumber
 " highlight LineNr ctermfg=white ctermbg=0 guibg=darkgrey
 
+" scroll window offset
+set scrolloff=10
 
 " TextEdit might fail if hidden is not set.
 set hidden
