@@ -27,7 +27,7 @@ Plug 'neoclide/coc-tsserver'
 Plug 'neoclide/coc-git'
 Plug 'iamcco/coc-spell-checker'
 Plug 'Yggdroot/indentLine'
-" Plug 'fannheyward/coc-texlab'
+Plug 'fannheyward/coc-texlab'
 " Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
 " TODO coc-lists
