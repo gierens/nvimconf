@@ -26,11 +26,16 @@ Plug 'neoclide/coc-yaml'
 Plug 'neoclide/coc-tsserver'
 Plug 'neoclide/coc-git'
 Plug 'iamcco/coc-spell-checker'
+Plug 'iamcco/coc-cspell-dicts'
+" Plug 'iamcco/coc-zi'
 Plug 'Yggdroot/indentLine'
 Plug 'fannheyward/coc-texlab'
 " Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
 " TODO coc-lists
+
+" NOTE install coc-word by
+" :CocInstall coc-word
 
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
@@ -257,6 +262,9 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" CoC Extensions
+let g:coc_global_extensions = [ 'coc-clangd', 'coc-cspell-dicts', 'coc-emoji', 'coc-explorer', 'coc-fzf-preview', 'coc-git', 'coc-python', 'coc-sh', 'coc-snippets', 'coc-spell-checker', 'coc-sumneko-lua', 'coc-texlab', 'coc-tsserver', 'coc-word', 'coc-yaml', 'coc-zi' ]
 
 " Mappings for CoCList
 " Show all diagnostics.
