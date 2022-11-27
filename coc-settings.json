@@ -57,5 +57,6 @@
   },
   "snippets.ultinips.directories": [
       "${HOME}/.config/nvim/ultispnips"
-  ]
+  ],
+  "Lua.telemetry.enable": false,
 }
