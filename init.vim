@@ -389,6 +389,7 @@ nmap <leader>gA :Git add %<CR>
 nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gC :Git commit --amend<CR>
+nmap <leader>gP :Git pull<CR>
 
 
 " Further CoC Settings
