@@ -390,6 +390,15 @@ nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gC :Git commit --amend<CR>
 nmap <leader>gP :Git pull<CR>
+nmap <leader>gm :Git merge 
+nmap <leader>gb :Git branch 
+nmap <leader>gd :Git diff<CR>
+nmap <leader>gt :Git stash<CR>
+nmap <leader>gT :Git stash apply<CR>
+nmap <leader>go :Git checkout 
+nmap <leader>gO :Git checkout -b 
+nmap <leader>gl :Git log<CR>
+nmap <leader>gL :Git log --graph --oneline --decorate --all<CR>
 
 
 " Further CoC Settings
