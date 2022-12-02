@@ -384,8 +384,11 @@ nmap <leader>gp :CocCommand git.push<CR>
 " fugitive
 
 " commit
+nmap <leader>gs :Git status<CR>
+nmap <leader>gA :Git add %<CR>
+nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
-" TODO maybe some restore staged
+nmap <leader>gC :Git commit --amend<CR>
 
 
 " Further CoC Settings
