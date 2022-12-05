@@ -393,6 +393,7 @@ nmap <leader>gC :Git commit --amend<CR>
 nmap <leader>gP :Git pull<CR>
 nmap <leader>gm :Git merge 
 nmap <leader>gb :Git branch 
+nmap <leader>gB :Git blame<CR>
 nmap <leader>gd :Git diff<CR>
 nmap <leader>gt :Git stash<CR>
 nmap <leader>gT :Git stash apply<CR>
