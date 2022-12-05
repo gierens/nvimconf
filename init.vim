@@ -385,6 +385,7 @@ nmap <leader>gp :CocCommand git.push<CR>
 " fugitive
 
 " commit
+nmap <leader>gg :Git 
 nmap <leader>gs :Git status<CR>
 nmap <leader>gA :Git add %<CR>
 nmap <leader>gR :Git restore --staged %<CR>
