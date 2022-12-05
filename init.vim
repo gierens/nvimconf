@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdcommenter'
 Plug 'severin-lemaignan/vim-minimap'
 " Plug 'takac/vim-hardtime'
 Plug 'lervag/vimtex'
