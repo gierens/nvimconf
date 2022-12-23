@@ -462,7 +462,7 @@ filetype plugin indent on
 
 " cheat.sh
 " vim.g.cheat_default_window_layout = 'split'
-map <C-c> :Cheat 
+map <M-h> :Cheat 
 
 " enable asm syntax for .asm files
 autocmd BufNewFile,BufRead *.asm set syntax=asm
