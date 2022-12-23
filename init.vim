@@ -73,6 +73,10 @@ Plug 'ThePrimeagen/vim-be-good'
 " GitHub Copilot
 Plug 'github/copilot.vim'
 
+" ChatGPT
+Plug 'MunifTanjim/nui.nvim'
+Plug 'jackMort/ChatGPT.nvim'
+
 " Visual Multi
 Plug 'mg979/vim-visual-multi'
 
@@ -591,3 +595,15 @@ EOF
 " let g:VM_maps = {}
 " let g:VM_maps['Find Under']         = '<C-l>'           " replace C-n
 " let g:VM_maps['Find Subword Under'] = '<C-l>'           " replace visual C-n
+
+" ChatGPT
+lua <<EOF
+config = require("chatgpt").setup({
+    question_sign = "?",
+    answer_sign = "!",
+    chat_input = {
+        prompt = " > ",
+    }
+})
+EOF
+map <M-k> :ChatGPT<CR>
