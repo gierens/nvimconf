@@ -42,6 +42,8 @@ Plug 'fannheyward/coc-texlab'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'mengelbrecht/lightline-bufferline'
+" TODO maybe compare to bufferline.nvim
 
 " nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -340,6 +342,10 @@ let g:indentLine_fileTypeExclude = ['tex']
 
 " lightline
 let g:lightline = {
+  \ 'enable': {
+  \   'statusline': 1,
+  \   'tabline': 1,
+  \ },
   \ 'active': {
   \   'left': [
   \     [ 'mode', 'paste' ],
@@ -350,13 +356,31 @@ let g:lightline = {
   \     [ 'blame' ]
   \   ],
   \ },
+  \ 'inactive': {
+  \   'left': [ [ 'filename' ] ],
+  \   'right': [ [ 'lineinfo' ],
+  \              [ 'percent' ] ]
+  \ },
+  \ 'tabline': {
+  \   'left': [ [ 'buffers' ] ],
+  \   'right': [ [ 'tabs' ] ]
+  \ },
   \ 'component_function': {
   \   'blame': 'LightlineGitBlame',
   \   'gitbranch': 'FugitiveHead'
   \ },
+  \ 'component_expand': {
+  \   'buffers': 'lightline#bufferline#buffers'
+  \ },
+  \ 'component_type': {
+  \   'buffers': 'tabsel'
+  \ },
   \ 'separator': { 'left': '', 'right': '' },
-  \ 'subseparator': { 'left': '', 'right': '' }
+  \ 'subseparator': { 'left': '', 'right': '' },
 \ }
+let g:lightline#bufferline#min_buffer_count = 0
+let g:lightline#bufferline#min_tab_count = 0
+set showtabline=2
 
 " set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
 
