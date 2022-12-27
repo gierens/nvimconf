@@ -41,6 +41,7 @@ Plug 'fannheyward/coc-texlab'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 
 " nvim-treesitter
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -342,7 +343,7 @@ let g:lightline = {
   \ 'active': {
   \   'left': [
   \     [ 'mode', 'paste' ],
-  \     [ 'ctrlpmark', 'git', 'diagnostic', 'cocstatus', 'filename', 'method' ]
+  \     [ 'ctrlpmark', 'gitbranch', 'git', 'diagnostic', 'cocstatus', 'filename', 'method' ]
   \   ],
   \   'right':[
   \     [ 'filetype', 'fileencoding', 'lineinfo', 'percent' ],
@@ -351,7 +352,10 @@ let g:lightline = {
   \ },
   \ 'component_function': {
   \   'blame': 'LightlineGitBlame',
-  \ }
+  \   'gitbranch': 'FugitiveHead'
+  \ },
+  \ 'separator': { 'left': '', 'right': '' },
+  \ 'subseparator': { 'left': '', 'right': '' }
 \ }
 
 " set statusline^=%{get(g:,'coc_git_status','')}%{get(b:,'coc_git_status','')}%{get(b:,'coc_git_blame','')}
