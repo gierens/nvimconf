@@ -412,7 +412,7 @@ nmap <leader>gr :CocCommand git.chunkUnstage<CR>
 " undo chuck at current position
 nmap <leader>gu :CocCommand git.chunkUndo<CR>
 " push
-nmap <leader>gp :CocCommand git.push<CR>
+" nmap <leader>gp :CocCommand git.push<CR>
 
 " fugitive
 
@@ -423,6 +423,7 @@ nmap <leader>gA :Git add %<CR>
 nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gC :Git commit --amend<CR>
+nmap <leader>gp :Git push<CR>
 nmap <leader>gP :Git pull<CR>
 nmap <leader>gm :Git merge 
 nmap <leader>gb :Git branch 
