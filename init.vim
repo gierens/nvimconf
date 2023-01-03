@@ -424,6 +424,7 @@ nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gC :Git commit --amend<CR>
 nmap <leader>gp :Git push<CR>
+nmap <leader>gF :Git push --force<CR>
 nmap <leader>gP :Git pull<CR>
 nmap <leader>gm :Git merge 
 nmap <leader>gb :Git branch 
