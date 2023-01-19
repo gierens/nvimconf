@@ -426,7 +426,7 @@ nmap <leader>gC :Git commit --amend<CR>
 nmap <leader>gp :Git push<CR>
 nmap <leader>gP :Git push --force<CR>
 nmap <leader>gk :Git pull<CR>
-nmap <leader>gm :Git merge 
+nmap <leader>gm :Git merge --no-ff 
 nmap <leader>gb :Git branch 
 nmap <leader>gB :Git blame<CR>
 nmap <leader>gd :Git diff<CR>
