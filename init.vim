@@ -637,4 +637,4 @@ config = require("chatgpt").setup({
     }
 })
 EOF
-map <M-k> :ChatGPT<CR>
+map <M-g> :ChatGPT<CR>
