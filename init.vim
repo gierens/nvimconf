@@ -430,6 +430,7 @@ nmap <leader>gm :Git merge --no-ff
 nmap <leader>gb :Git branch 
 nmap <leader>gB :Git blame<CR>
 nmap <leader>gd :Git diff<CR>
+nmap <leader>gt :Git tag -fa 
 nmap <leader>gw :Git stash<CR>
 nmap <leader>gW :Git stash apply<CR>
 nmap <leader>go :Git checkout 
