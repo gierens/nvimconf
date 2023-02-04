@@ -314,6 +314,9 @@ nnoremap <silent> [fzf-p]q     :<C-u>CocCommand fzf-preview.QuickFix<CR>
 nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
 
 
+" coc-texlab
+:nmap <M-x> :CocCommand latex.Build<CR>
+
 " coc-explorer
 ":nmap <C-n> :CocCommand explorer<CR>
 
