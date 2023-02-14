@@ -641,3 +641,6 @@ config = require("chatgpt").setup({
 })
 EOF
 map <M-g> :ChatGPT<CR>
+
+" Terminal Emulator
+map <M-t> :terminal<CR>
