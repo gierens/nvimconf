@@ -1,4 +1,7 @@
 call plug#begin()
+" Plug '~/Projects/neovim-plugin'
+Plug 'gierens/neovim-plugin'
+
 " Plug 'roxma/nvim-completion-manager'
 " Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -80,8 +83,17 @@ Plug 'github/copilot.vim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'jackMort/ChatGPT.nvim'
 
+" Todoist
+Plug 'romgrk/todoist.nvim', { 'do': ':TodoistInstall' }
+
+" Calendar
+Plug 'itchyny/calendar.vim'
+
 " Visual Multi
 Plug 'mg979/vim-visual-multi'
+
+" Make it Rai
+Plug 'eandrju/cellular-automaton.nvim'
 
 " colorschemes
 Plug 'morhetz/gruvbox'
@@ -423,6 +435,7 @@ nmap <leader>gu :CocCommand git.chunkUndo<CR>
 nmap <leader>gg :Git 
 nmap <leader>gs :Git status<CR>
 nmap <leader>gA :Git add %<CR>
+nmap <leader>gAA :Git add .<CR>
 nmap <leader>gR :Git restore --staged %<CR>
 nmap <leader>gc :Git commit<CR>
 nmap <leader>gC :Git commit --amend<CR>
@@ -644,3 +657,5 @@ map <M-g> :ChatGPT<CR>
 
 " Terminal Emulator
 map <M-t> :terminal<CR>
+
+map <M-r> :CellularAutomaton make_it_rain<CR>
