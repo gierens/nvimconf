@@ -373,8 +373,8 @@ let g:lightline = {
   \ },
   \ 'inactive': {
   \   'left': [ [ 'filename' ] ],
-  \   'right': [ [ 'lineinfo' ],
-  \              [ 'percent' ] ]
+  \   'right': [ [ 'percent' ],
+  \              [ 'lineinfo' ] ]
   \ },
   \ 'tabline': {
   \   'left': [ [ 'buffers' ] ],
