@@ -105,7 +105,7 @@ call plug#end()
 " au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
 " colorscheme and background based on time
-if strftime("%H") > 8 || strftime("%H") < 20
+if strftime("%H") > 8 && strftime("%H") < 20
     colorscheme gruvbox
     set background=light
 else
