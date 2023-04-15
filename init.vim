@@ -104,8 +104,14 @@ call plug#end()
 " au ColorScheme * hi Normal ctermbg=none guibg=none
 " au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
-" colors
-colorscheme gruvbox
+" colorscheme and background based on time
+if strftime("%H") > 8 || strftime("%H") < 20
+    colorscheme gruvbox
+    set background=light
+else
+    colorscheme gruvbox
+    set background=dark
+endif
 
 " toggle background
 call togglebg#map("<F5>")
