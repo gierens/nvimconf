@@ -178,6 +178,9 @@ map <C-l> :NERDTreeToggle<CR>
 
 " coc.nvim Config
 
+" Use jj as <Esc> alternative
+inoremap jj <ESC>
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
