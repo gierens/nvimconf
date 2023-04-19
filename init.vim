@@ -22,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'clangd/coc-clangd'
+Plug 'fannheyward/coc-rust-analyzer'
 Plug 'neoclide/coc-snippets'
 Plug 'neoclide/coc-python'
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
