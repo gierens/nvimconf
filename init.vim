@@ -35,6 +35,7 @@ Plug 'iamcco/coc-cspell-dicts'
 " Plug 'iamcco/coc-zi'
 Plug 'Yggdroot/indentLine'
 Plug 'fannheyward/coc-texlab'
+Plug 'neoclide/coc-java'
 " Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
 " TODO coc-lists
