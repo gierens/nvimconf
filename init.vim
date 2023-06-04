@@ -19,6 +19,9 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 " fugitive
 Plug 'tpope/vim-fugitive'
 
+" surround
+Plug 'tpope/vim-surround'
+
 " CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'clangd/coc-clangd'
