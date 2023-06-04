@@ -40,6 +40,7 @@ Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
 " TODO coc-lists
+Plug 'neoclide/coc-pairs'
 
 " NOTE install coc-word by
 " :CocInstall coc-word
