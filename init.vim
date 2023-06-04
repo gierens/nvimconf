@@ -510,6 +510,9 @@ map <M-m> :CocCommand cSpell.toggleEnableSpellChecker<CR>
 vmap <leader>m <Plug>(coc-codeaction-selected)
 nmap <leader>m <Plug>(coc-codeaction-selected)
 
+" coc-pairs
+autocmd FileType tex let b:coc_pairs = [["$", "$"]]
+
 " rust.vim
 syntax enable
 filetype plugin indent on
