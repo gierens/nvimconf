@@ -36,6 +36,7 @@ Plug 'iamcco/coc-cspell-dicts'
 Plug 'Yggdroot/indentLine'
 Plug 'fannheyward/coc-texlab'
 Plug 'neoclide/coc-java'
+Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'weirongxu/coc-explorer'
 " Plug 'neoclide/coc-highlight'
 " TODO coc-lists
@@ -461,7 +462,7 @@ nmap <leader>gL :Git log --graph --oneline --decorate --all<CR>
 
 
 " Further CoC Settings
-let g:coc_filetype_map = { 'yaml.ansible': 'yaml', }
+let g:coc_filetype_map = { 'yaml.ansible': 'ansible' }
 
 
 " reload config
