@@ -76,6 +76,9 @@ Plug 'rishabhrd/nvim-cheat.sh'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+" easymotion
+Plug 'easymotion/vim-easymotion'
+
 " harpoon
 " also requires nvim-lua/plenary.nvim
 Plug 'ThePrimeagen/harpoon'
