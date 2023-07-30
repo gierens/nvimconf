@@ -59,4 +59,5 @@
       "${HOME}/.config/nvim/ultispnips"
   ],
   "Lua.telemetry.enable": false,
+  "clangd.path": "/usr/bin/clangd",
 }
