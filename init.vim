@@ -718,4 +718,5 @@ map <M-g> :ChatGPT<CR>
 " Terminal Emulator
 map <M-t> :terminal<CR>
 
+" Code Rain
 map <M-r> :CellularAutomaton make_it_rain<CR>
