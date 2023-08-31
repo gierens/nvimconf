@@ -549,6 +549,9 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fc <cmd>Telescope commands<cr>
+nnoremap <leader>fr <cmd>Telescope resume<cr>
+nnoremap <leader>fR <cmd>Telescope registers<cr>
 "
 " " Using Lua functions
 " nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
