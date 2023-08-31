@@ -96,6 +96,9 @@ Plug 'jackMort/ChatGPT.nvim'
 " Todoist
 Plug 'romgrk/todoist.nvim', { 'do': ':TodoistInstall' }
 
+" Clap
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+
 " Calendar
 Plug 'itchyny/calendar.vim'
 
