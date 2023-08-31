@@ -108,6 +108,9 @@ Plug 'mg979/vim-visual-multi'
 " Make it Rain
 Plug 'eandrju/cellular-automaton.nvim'
 
+" unicode
+Plug 'chrisbra/unicode.vim'
+
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
