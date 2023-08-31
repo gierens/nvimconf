@@ -102,7 +102,7 @@ Plug 'itchyny/calendar.vim'
 " Visual Multi
 Plug 'mg979/vim-visual-multi'
 
-" Make it Rai
+" Make it Rain
 Plug 'eandrju/cellular-automaton.nvim'
 
 " colorschemes
