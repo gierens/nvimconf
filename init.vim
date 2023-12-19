@@ -65,6 +65,13 @@ Plug 'sheerun/vim-polyglot'
 " rust
 Plug 'rust-lang/rust.vim'
 
+" cmp
+Plug 'hrsh7th/nvim-cmp'
+
+" crates
+" also requires 'nvim-lua/plenary.nvim'
+Plug 'saecki/crates.nvim', { 'tag': 'v0.3.0' }
+
 " also install hdl_checker
 Plug 'suoto/hdlcc'
 
@@ -535,6 +542,9 @@ autocmd FileType tex let b:coc_pairs = [["$", "$"]]
 syntax enable
 filetype plugin indent on
 let g:rustfmt_autosave = 1
+
+" crates.nvim
+lua require('crates').setup()
 
 " cheat.sh
 " vim.g.cheat_default_window_layout = 'split'
