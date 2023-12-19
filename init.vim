@@ -106,6 +106,9 @@ Plug 'github/copilot.vim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'jackMort/ChatGPT.nvim'
 
+" RFC
+Plug 'mhinz/vim-rfc'
+
 " Todoist
 Plug 'romgrk/todoist.nvim', { 'do': ':TodoistInstall' }
 
@@ -779,3 +782,6 @@ R = function(name)
     return require(name)
 end
 EOF
+
+" vim-rfc
+nmap <leader>r :RFC 
