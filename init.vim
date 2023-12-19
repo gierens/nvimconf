@@ -786,5 +786,8 @@ EOF
 " plenary
 nmap <leader>t <Plug>PlenaryTestFile
 
+" file manager
+nmap <leader>s :Sex<CR>
+
 " vim-rfc
 nmap <leader>r :RFC 
