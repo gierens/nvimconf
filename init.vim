@@ -762,3 +762,20 @@ map <M-t> :terminal<CR>
 
 " Code Rain
 map <M-r> :CellularAutomaton make_it_rain<CR>
+
+" custom lua functions
+lua <<EOF
+P = function(v)
+  print(vim.inspect(v))
+  return v
+end
+
+RELOAD = function(...)
+    return require("plenary.reload").reload_module(...)
+end
+
+R = function(name)
+    RELOAD(name)
+    return require(name)
+end
+EOF
