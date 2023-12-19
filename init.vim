@@ -783,5 +783,8 @@ R = function(name)
 end
 EOF
 
+" plenary
+nmap <leader>t <Plug>PlenaryTestFile
+
 " vim-rfc
 nmap <leader>r :RFC 
