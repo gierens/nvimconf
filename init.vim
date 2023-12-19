@@ -72,8 +72,14 @@ Plug 'suoto/hdlcc'
 Plug 'RishabhRD/popfix'
 Plug 'rishabhrd/nvim-cheat.sh'
 
-" telescope
+" plenary
 Plug 'nvim-lua/plenary.nvim'
+
+" lua docs
+Plug 'nanotee/luv-vimdocs'
+Plug 'milisims/nvim-luaref'
+
+" telescope
 Plug 'nvim-telescope/telescope.nvim'
 
 " easymotion
