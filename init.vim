@@ -544,6 +544,7 @@ autocmd FileType tex let b:coc_pairs = [["$", "$"]]
 " rust.vim
 syntax enable
 filetype plugin indent on
+let g:rustfmt_options = '--edition 2021'
 let g:rustfmt_autosave = 1
 
 " crates.nvim
