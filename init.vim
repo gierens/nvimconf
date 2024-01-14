@@ -88,6 +88,7 @@ Plug 'milisims/nvim-luaref'
 
 " telescope
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'debugloop/telescope-undo.nvim'
 
 " easymotion
 Plug 'easymotion/vim-easymotion'
@@ -589,6 +590,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 nnoremap <leader>fr <cmd>Telescope resume<cr>
 nnoremap <leader>fR <cmd>Telescope registers<cr>
+nnoremap <leader>fu <cmd>Telescope undo<cr>
 "
 " " Using Lua functions
 " nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({hidden = true})<cr>
