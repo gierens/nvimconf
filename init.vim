@@ -202,6 +202,10 @@ call matchadd('ExtraWhitespace', '\s\+$')
 " Match all non-ASCII characters (including äöüß ...)
 "call matchadd('ExtraWhitespace', '[^\u0000-\u007F]')
 
+" persistent undo
+set undodir=~/.nvim/undo
+set undofile
+
 " NerdTree Config
 map <C-l> :NERDTreeToggle<CR>
 
