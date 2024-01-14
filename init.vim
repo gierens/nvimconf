@@ -86,6 +86,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nanotee/luv-vimdocs'
 Plug 'milisims/nvim-luaref'
 
+" undotree
+Plug 'mbbill/undotree'
+
 " telescope
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'debugloop/telescope-undo.nvim'
@@ -794,3 +797,6 @@ nmap <leader>s :Sex<CR>
 
 " vim-rfc
 nmap <leader>r :RFC 
+
+" undotree
+nnoremap <leader>u :UndotreeToggle<CR>
