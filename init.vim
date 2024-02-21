@@ -12,6 +12,11 @@ Plug 'severin-lemaignan/vim-minimap'
 " Plug 'takac/vim-hardtime'
 Plug 'lervag/vimtex'
 
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'williamboman/mason.nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'kaarmu/typst.vim'
+
 " fzf
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 " Plug 'junegunn/fzf.vim'
@@ -804,3 +809,13 @@ nmap <leader>r :RFC
 
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
+
+" typst
+lua <<EOF
+require('lspconfig').typst_lsp.setup{
+    settings = {
+        exportPdf = "onType" -- Choose onType, onSave or never.
+        -- serverPath = "" -- Normally, there is no need to uncomment it.
+    }
+}
+EOF
