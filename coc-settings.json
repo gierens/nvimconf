@@ -53,7 +53,11 @@
               "verilog",
               "systemverilog"
           ]
-      }
+      },
+        "typst": {
+            "command": "typst-lsp",
+            "filetypes": ["typst"]
+        }
   },
   "snippets.ultinips.directories": [
       "${HOME}/.config/nvim/ultispnips"
